@@ -1,9 +1,6 @@
 import os, datetime
 
-
-
-
-path = 'G:\py'
+path = 'D:\Sample'
 os.chdir(path)
 files= os.getcwd()
 files = os.listdir(files)
@@ -11,11 +8,9 @@ files = sorted(files,key=os.path.getmtime)
 latest = files.reverse()
 
 for file in files[5:]:
-    
     os.remove(os.path.join(path, file))
 
 for file in files[:5]:
-
     print(file)
 
 
