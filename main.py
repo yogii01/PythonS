@@ -19,14 +19,9 @@ for file in files[:5]:
 
 import zipfile
 import os
-
 working_folder = 'D:\Sample'
-
 files = os.listdir(working_folder)
-
-
 ZipFile = zipfile.ZipFile("python.zip", "w" )
-
 for a in files:
     ZipFile.write(os.path.basename(a), compress_type=zipfile.ZIP_DEFLATED)
 ZipFile.close()
