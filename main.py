@@ -14,9 +14,6 @@ for file in files[:5]:
     print(file)
 
 
-
-
-
 import zipfile
 import os
 working_folder = 'D:\Sample'
