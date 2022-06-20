@@ -11,7 +11,7 @@ for file in files[5:]:
     os.remove(os.path.join(path, file))
 
 for file in files[:5]:
-    #print(file)
+    print(file)
 
 
 import zipfile
